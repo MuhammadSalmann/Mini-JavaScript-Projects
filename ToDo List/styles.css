@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    min-height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    background: linear-gradient(135deg, rgba(117, 116, 116, 0.6) , rgb(0, 0, 0) 50%, rgba(117, 116, 116, 0.6));  
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 40px 30px;
+    box-shadow: 5px 5px 80px orange;
+}
+
+h1 {
+    display: flex;
+    margin-bottom: 30px;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 1px orange;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+h1::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+}
+
+h1:hover::before {
+    transition: 1s ease;
+    width: 40%;
+}
+
+img {
+    width: 45px;
+    height: 35px;
+}
+
+.task-entry {
+    width: 75%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 20px;
+    background-color: #edeef0;
+}
+
+input:hover ,input:focus {
+    transition: border-color 0.5s ease;
+    border-color: orange;
+}
+
+button {
+    width: 20%;
+    height: 40px;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover { opacity: 0.7; }
+
+.list-cont {
+    font-size: 1.1rem;
+    padding: 20px 10px 8px;
+}
+
+ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+}
+
+input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+i {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+}
+
+i:hover { color: red; }
+
+.pen {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    right: 7%;
+    height: 20px;
+    width: 20px;
+}
+
+/* 
+ul li::before {
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(236, 237, 240);
+    border: 1px solid black;
+} */
+
